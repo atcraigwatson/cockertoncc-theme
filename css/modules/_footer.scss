@@ -1,0 +1,12 @@
+.site-footer {
+  background-color: #121619;
+}
+
+
+
+.site-footer a {
+  color: #fff;
+  &:hover {
+    color: darken(#fff, 15%);
+  }
+}

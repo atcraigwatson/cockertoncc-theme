@@ -1,0 +1,97 @@
+body.login {
+  background-color: $secondary;
+}
+
+// body.login div#login {}
+
+// body.login div#login h1 {}
+
+// body.login div#login h1 a {}
+
+body.login div#login form#loginform,
+body.login div#login form#lostpasswordform,
+body.login div#login form#registerform {
+  color: $white;
+  background-color: $primary;
+  border-radius: $border-radius;
+  border: none;
+  box-shadow: $box-shadow-lg;
+}
+
+body.login div#login form#lostpasswordform p,
+body.login div#login form#loginform p,
+body.login div#login form#registerform p {
+  color: $white;
+}
+
+body.login div#login form#lostpasswordform p label,
+body.login div#login form#loginform p label,
+body.login div#login form#registerform p label {
+  color: $white;
+}
+
+body.login div#login form#loginform input,
+body.login div#login form#loginform input#user_login,
+body.login div#login form#loginform input#user_pass,
+body.login div#login form#lostpasswordform input,
+body.login div#login form#lostpasswordform input#user_login,
+body.login div#login form#lostpasswordform input#user_pass,
+body.login div#login form#registerform input,
+body.login div#login form#registerform input#user_login,
+body.login div#login form#registerform input#user_pass {
+  color: $white;
+  background-color: darken($primary, 4%);
+}
+
+body.login div#login form#lostpasswordform input:focus,
+body.login div#login form#loginform input:focus,
+body.login div#login form#registerform input:focus {
+  color: $white;
+  border-color: $white;
+  box-shadow: 0 0 0 1px $white;
+  outline: 2px solid transparent;
+}
+
+
+// body.login div#login form#loginform p.forgetmenot {}
+
+// body.login div#login form#loginform p.forgetmenot input#rememberme {}
+
+// body.login div#login form#loginform p.submit {}
+
+body.login div#login form#lostpasswordform p.submit input#wp-submit,
+body.login div#login form#loginform p.submit input#wp-submit,
+body.login div#login form#registerform p.submit input#wp-submit {
+  background-color: $secondary;
+  color: $black;
+  border: none !important;
+}
+
+body.login div#login form#lostpasswordform .button-secondary,
+body.login div#login form#loginform .button-secondary,
+body.login div#login form#registerform .button-secondary {
+  color: $secondary;
+}
+
+// body.login div#login p#nav {}
+
+// body.login div#login p#nav a {}
+
+// body.login div#login p#backtoblog {}
+
+// body.login div#login p#backtoblog a {}
+
+
+.login .message,
+.login .notice,
+.login .success {
+  border-left: 8px solid $primary;
+  padding: $spacer;
+  margin-left: 0;
+  margin-bottom: $spacer;
+  background-color: lighten($primary, 20%);
+  box-shadow: $box-shadow-lg;
+  word-wrap: break-word;
+  color: $white;
+  border-radius: $border-radius;
+}

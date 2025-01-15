@@ -1,0 +1,130 @@
+
+
+
+.woocommerce h2,
+.woocommerce form .form-row label {
+  color: #fff;
+}
+
+.woocommerce form.checkout_coupon, 
+.woocommerce form.login, 
+.woocommerce form.register {
+  background-color: $primary;
+  color: #fff;
+}
+
+.woocommerce-account .woocommerce {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(-0.5 * var(--bs-gutter-x));
+}
+
+.woocommerce-account .woocommerce .woocommerce-MyAccount-navigation {
+  float: none;
+  width: 100%;
+}
+
+.woocommerce-account .woocommerce .woocommerce-MyAccount-navigation ul {
+  display: flex;
+  flex-direction: row;
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none;
+  background-color: $primary;
+}
+
+.woocommerce-account .woocommerce .woocommerce-MyAccount-navigation ul li a {
+  display: block;
+  padding: $spacer;
+  min-width: 100%;
+  color: $white;
+  text-decoration: none;
+  border: 1px solid white;
+}
+
+.woocommerce-account .woocommerce .woocommerce-MyAccount-navigation ul li.is-active a {
+  text-decoration: underline;
+}
+
+.woocommerce-account .woocommerce .woocommerce-MyAccount-content {
+  float: none;
+  background-color: $primary;
+  border: 1px solid white;
+  padding: 1rem;
+  color: white;
+}
+
+.woocommerce-account .woocommerce .woocommerce-MyAccount-content a {
+  color: $white;
+  text-decoration: underline;
+}
+
+.woocommerce-account .woocommerce input.input-text,
+.woocommerce-account .woocommerce .woocommerce-Input,
+.woocommerce form .form-row input.input-text {
+  color: $white;
+  background-color: darken($primary, 4%);
+  border: 1px solid #c5c8cd;
+  padding: .375rem .75rem;
+  border-radius: 4px;
+}
+
+.woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) #respond input#submit,
+.woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) a.button,
+.woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) button.button,
+.woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) input.button,
+:where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce #respond input#submit,
+:where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce a.button,
+:where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce button.button,
+:where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce input.button {
+  font-size: 100%;
+  margin: 0;
+  line-height: 1;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  overflow: visible;
+  padding: .618em 1em;
+  font-weight: 700;
+  border-radius: 3px;
+  left: auto;
+  color: #000;
+  background-color: $secondary;
+  border: 0;
+  display: inline-block;
+  background-image: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+.woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) #respond input#submit:hover, .woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) a.button:hover, .woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) button.button:hover, .woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) input.button:hover, :where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce #respond input#submit:hover, :where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce a.button:hover, :where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce button.button:hover, :where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce input.button:hover {
+  background-color: darken($secondary, 10%);
+  text-decoration: none;
+  background-image: none;
+  color: #000;
+}
+
+
+
+.woocommerce-LostPassword a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .woocommerce-account .woocommerce .woocommerce-MyAccount-navigation {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+  .woocommerce-account .woocommerce .woocommerce-MyAccount-navigation ul {
+    flex-direction: column;
+  }
+  .woocommerce-account .woocommerce .woocommerce-MyAccount-content {
+    flex: 0 0 auto;
+    width: 75%;
+  }
+}

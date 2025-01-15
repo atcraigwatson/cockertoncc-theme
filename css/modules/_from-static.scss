@@ -1,0 +1,125 @@
+.bg-club-yellow {
+  background-color: #FFDF10;
+}
+
+.bg-club-green {
+  background-color: #12684D;
+}
+
+.bg-club-green-dark {
+  background-color: #0d4e3a;
+}
+
+.bg-club-green-darkest {
+  background-color: #0a3d2d;
+}
+
+.bg-club-green-light {
+  background-color: #178260;
+}
+
+@media (min-width: 768px) {
+  .records-alert {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  .records-table {
+    font-size: 1rem;
+  }
+}
+
+
+.navbar-nav {
+  margin-top: 72px;
+}
+@media (min-width: 992px) {
+  .navbar-nav {
+    margin-top: 0;
+  }
+}
+
+.navbar-dark {
+  background-color: #12684D !important;
+}
+
+.navbar-brand {
+  position: absolute;
+  top: 0;
+  left: calc(var(--bs-gutter-x) * .5);
+}
+.navbar-brand 
+img {
+  height: 100px;
+  width: auto;
+}
+
+ol {
+  counter-reset: item;
+}
+
+ol > li {
+  counter-increment: item;
+}
+
+ol ol > li {
+  display: block;
+}
+
+ol ol > li:before {
+  content: counters(item,".") ". ";
+  margin-left: -20px;
+}
+
+.home-jumbotron-img {
+  min-height: calc(100vh - 56px );
+  min-width: 100%;
+  height: calc(100vh - 56px );
+  width: 100%;
+  background-image: linear-gradient(to right, rgba(255, 223, 16, 0.8), rgba(18, 104, 77, 0.8)), radial-gradient(circle at center, rgba(0, 0, 0, 0.6), rgba(255, 255, 255, 0)), url("../images/home-jumbotron-bg.jpeg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-jumbotron h1,
+.home-jumbotron p.lead {
+  color: #fff;
+}
+
+.home-logo {
+  max-width: 25%;
+}
+
+.card-membership {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.card-membership .card-header,
+.card-membership .card-body,
+.card-membership .card-footer {
+  background-color: #faf4f4;
+}
+
+.card-membership-green {
+  min-height: 120%;
+}
+.card-membership-green .card {
+  min-height: 100%;
+}
+.card-membership-green .card-header {
+  padding-top: 2rem;
+}
+.card-membership-green .card-header,
+.card-membership-green .card-body,
+.card-membership-green .card-footer {
+  background-color: #12684D;
+  color: #fff;
+}
+
+.card-membership-green .list-group-item {
+  color: #fff;
+  background-color: #12684D;
+  border-color: #0f5740;
+}
+
