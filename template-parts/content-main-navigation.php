@@ -13,24 +13,24 @@
                 <a class="nav-link <?php if ( is_front_page() ) echo 'active' ?>" href="<?php echo site_url() ?>">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link <?php if ( get_the_ID() == 99 ) echo 'active' ?>" href="<?php echo site_url('/fixtures') ?>">Fixtures</a>
+                <a class="nav-link <?php if ( get_the_ID() == 99 ) echo 'active' ?>" href="<?php echo get_permalink(99) ?>">Fixtures</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link <?php if ( get_the_ID() == 101 ) echo 'active' ?>" href="<?php echo site_url('/club-records') ?>">Club Records</a>
+                <a class="nav-link <?php if ( get_the_ID() == 101 ) echo 'active' ?>" href="<?php echo get_permalink(101) ?>">Club Records</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link <?php if ( get_the_ID() == 103 ) echo 'active' ?>" href="<?php echo site_url('/club-rules') ?>">Club Rules</a>
+                <a class="nav-link <?php if ( get_the_ID() == 103 ) echo 'active' ?>" href="<?php echo get_permalink(103) ?>">Club Rules</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link <?php if ( get_the_ID() == 97 ) echo 'active' ?>" href="<?php echo site_url('/player-membership') ?>">Player Membership</a>
+                <a class="nav-link <?php if ( get_the_ID() == 97 ) echo 'active' ?>" href="<?php echo get_permalink(97) ?>">Player Membership</a>
               </li>
               <?php if ( is_user_logged_in() ) { ?>
                 <li class="nav-item">
-                  <a  class="nav-link <?php if ( get_the_ID() == 276 ) echo 'active' ?>" href="<?php echo site_url('/my-account'); ?>">My Account</a>
+                  <a  class="nav-link <?php if ( get_the_ID() == 276 ) echo 'active' ?>" href="<?php echo get_permalink(276) ?>">My Account</a>
                 </li>
               <?php } else { ?>
                 <li class="nav-item">
-                  <a href="<?php echo site_url('/my-account'); ?>" class="btn btn-secondary">Login / Register</a>
+                  <a href="<?php echo get_permalink(276) ?>" class="btn btn-secondary">Login / Register</a>
                 </li>
               <?php } ?>
             </ul>
