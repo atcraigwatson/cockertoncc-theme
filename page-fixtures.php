@@ -53,7 +53,7 @@ function selectFixtureIcon() {
  */ 
 function do_fixture_loop($team) {
   // $today = date( 'Ymd' ); // this is to compare the dates of today against the upcoming fixtures, the formats must be the same.
-  $fixtureDate = new DateTime( get_field( 'date' ) );
+  
   $fixtures = new WP_Query(array(
     'posts_per_page' => -1,
     'post_type' => 'fixture',
@@ -80,6 +80,7 @@ function do_fixture_loop($team) {
   <ol class="list-group list-group-numbered list-group-fixtures text-white shadow-lg border-0">
     <?php while($fixtures->have_posts()) { ?>
       <?php $fixtures->the_post(); ?>
+        <?php $fixtureDate = new DateTime( get_field( 'date' ) ); ?>
         <li class="list-group-item d-flex justify-content-between align-items-start bg-club-green-dark text-white">
           <div class="ms-2 me-auto">
             <div class="text-white fw-bold me-3"><?php the_field('team') ?> <span class="fw-light">Vs.</span> <?php the_field('opponent') ?></div>
